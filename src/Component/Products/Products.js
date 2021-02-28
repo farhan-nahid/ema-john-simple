@@ -8,8 +8,8 @@ const Products = (props) => {
  //   console.log(props);
     return (
     
-        <section className="products col-md-8 border-end">
-            <div className="row row-cols-3 gx-5 gy-5">
+        <section className="products col-md-8 ">
+            <div className="row row-cols-3 gx-5 gy-3">
                 
                     {
                         products.map(product => <Product addToCartHandler={props.addToCartHandler} key={product.key} product={product}></Product>)

@@ -7,8 +7,8 @@ const Product = (props) => {
    // console.log(props);
    
     return (
-            <div className="single-product col-lg-4  text-center">
-            <div className="card h-100 border-0 shadow-lg">
+            <div className="single-product col-lg-4  text-center shadow ">
+            <div className="card h-100 border-0 shadow-lg ">
                 <div>
                 <img className="justify-content-center" src={img} alt="..." />
                 </div>
@@ -20,7 +20,7 @@ const Product = (props) => {
                         onClick={() =>  {
                         props.addToCartHandler(props.product)
                         setIsClicked(true) 
-                     }}    className="btn btn-outline-warning">
+                     }}    className="btn button btn-outline-warning">
                             {isClicked ? "✓ Already added to cart" : "Add to Cart"}
                         </button>
                     </div>

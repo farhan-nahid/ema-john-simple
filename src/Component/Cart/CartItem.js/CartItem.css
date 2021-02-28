@@ -1,0 +1,22 @@
+.single-items {
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  width: 350px;
+}
+.single-items:hover {
+  z-index: 1;
+  transform: scale(1.1);
+  transition: 1.5s;
+}
+.single-items img {
+  height: 150px;
+  width: 150px;
+}
+
+.single-items-content {
+  margin-left: 10px;
+  color: aliceblue;
+}

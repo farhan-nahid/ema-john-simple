@@ -1,5 +1,10 @@
+.single-product {
+  border-bottom: 2px solid gray;
+  padding: 20px;
+}
+
 .single-product img {
-  height: 250px;
+  height: 150px;
   text-align: center;
 }
 
@@ -7,7 +12,11 @@
   border-radius: 15px;
   position: relative;
   color: white;
-  background-color: #aab6c5;
+  background-color: #3883df;
+}
+
+.button {
+  color: white;
 }
 
 .card:hover {
@@ -16,8 +25,4 @@
   transition: 1.5s;
   background-color: green;
   color: rgb(255, 71, 4);
-}
-
-.products {
-  margin-top: 50px;
 }

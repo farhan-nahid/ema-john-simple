@@ -1,24 +1,28 @@
 import React from 'react';
-
+import './Cart.css';
+import CartItem from './CartItem.js/CartItem';
 
 
 const Cart = ({cart}) => {
-   // console.log({cart});
+    console.log(cart);
     const total = cart.reduce((acc, curr) => acc + curr.price, 0)
     return (
-        <aside className="sidebar col-md-4 ps-5">
-        <p>Item Cart in cart ({cart.length})</p>
-        <ul className="list-group my-4">
+        <div className="position-relative">
+        <aside className="sidebar col-md-4 ps-5  position-absolute top-0 end-0 position-fixed">
+        <h4 >Items in the Cart ({cart.length})</h4>
+        <div className="d-grid ">
+            <button className="btn btn-outline-success mb-5">Checkout - $ {total}</button>
+        </div>
+        <ul>
+            
             {
-                cart.map((product)=> <li key={product.key}>{product.category} </li>)
+                cart.map((product)=> <CartItem product={product}></CartItem>)
             }
 
-        
         </ul>
-        <div className="d-grid">
-            <button className="btn btn-outline-success">Checkout - {total}$</button>
-        </div>
+        
     </aside>
+    </div>
     );
 };
 

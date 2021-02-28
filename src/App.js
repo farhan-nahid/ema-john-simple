@@ -16,8 +16,12 @@ function App() {
   return (
     <>
      <Header></Header>
-     <Products  addToCartHandler={addToCartHandler}></Products>
-     <Cart cart={cart}></Cart>
+     <main className="container ">
+        <div className="row">
+              <Products  addToCartHandler={addToCartHandler}></Products>
+              <Cart cart={cart}></Cart>
+         </div>
+     </main>
       <Footer></Footer>
     </>
   );

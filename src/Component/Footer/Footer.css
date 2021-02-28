@@ -1,0 +1,10 @@
+.footer {
+  background-color: #f8f9fa;
+}
+
+.footer a {
+  text-decoration: none;
+  color: coral;
+  cursor: pointer;
+  font-weight: 700;
+}

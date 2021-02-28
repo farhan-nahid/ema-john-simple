@@ -1,0 +1,23 @@
+.single-product img {
+  height: 250px;
+  text-align: center;
+}
+
+.card {
+  border-radius: 15px;
+  position: relative;
+  color: white;
+  background-color: #aab6c5;
+}
+
+.card:hover {
+  z-index: 1;
+  transform: scale(1.1);
+  transition: 1.5s;
+  background-color: green;
+  color: rgb(255, 71, 4);
+}
+
+.products {
+  margin-top: 50px;
+}

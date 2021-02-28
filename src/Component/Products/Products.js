@@ -4,15 +4,15 @@ import Product from '../Product/Product';
 import './Products.css';
 
 
-const Products = () => {
-   // console.log(products);
+const Products = (props) => {
+ //   console.log(props);
     return (
     
         <section className="products col-md-8 border-end">
             <div className="row row-cols-3 gx-5 gy-5">
                 
                     {
-                        products.map(product => <Product key={product.key} product={product}></Product>)
+                        products.map(product => <Product addToCartHandler={props.addToCartHandler} key={product.key} product={product}></Product>)
                     }
                     
             </div>
